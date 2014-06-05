@@ -1,0 +1,114 @@
+"   Basic Options {{{
+"   Because Vundle
+set nocompatible     
+"   Syntax
+syntax on
+"   Line Number
+set number
+"   Auto indentation
+set autoindent
+set smartindent
+"   Tab width
+set tabstop=4
+"   < > width
+set shiftwidth=4 
+"   Subs Tabs for Spaces
+set expandtab 
+"   Show Command
+set showcmd
+"   No audible bell
+set visualbell
+" }}}
+"   Bundles {{{
+"   Vundle {{{
+filetype off            " Because Vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+"}}}
+"   Surround {{{
+Bundle 'tpope/vim-surround'
+ "}}}
+"   Endwise {{{
+Bundle 'tpope/vim-endwise'
+"}}}
+" DelimitMate{{{
+Bundle 'Raimondi/delimitMate'
+" }}}
+" Tagbar{{{
+Bundle 'majutsushi/tagbar'
+" }}}
+"}}}
+" Cursor Settings {{{
+"   Make cursor vertical on Insert Mode
+if has("autocmd")
+  au InsertEnter * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
+  au InsertLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape block"
+  au VimLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
+endif
+"   Remember last position
+set viminfo='10,\"100,:20,%,n~/.viminfo'
+function! ResCur()
+    if line("'\"") <= line("$")
+        normal! g`"
+        return 1
+    endif
+endfunction
+                
+augroup resCur
+    autocmd!
+    autocmd BufWinEnter * call ResCur()
+augroup END
+" }}}
+" Mappings {{{
+"   Tagbar
+nmap <leader>T :TagbarToggle<CR>
+"   Page Selecting
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
+"   Expand/Contract Folds
+nnoremap <S-Space> zR
+nnoremap <Space> za 
+"   Paste buffer unaffected by delete
+nnoremap z "0p
+vnoremap z "0p
+"   Maintaining visual selection when indenting
+vnoremap > >gv
+vnoremap < <gv
+"   Clear search buffer
+nnoremap <CR> :noh<CR><CR>
+" }}}
+" File Types {{{
+filetype plugin indent on
+" C {{{
+augroup ft_c
+				au!
+				au FileType c setlocal foldmethod=marker foldmarker={,}
+				au FileType cpp setlocal foldmethod=marker foldmarker={,}
+				au FileType h setlocal foldmethod=marker foldmarker={,}
+augroup END
+"}}}
+" Vim {{{
+augroup ft_vim
+	au!
+	au FileType vim setlocal foldmethod=marker
+	
+augroup END
+"}}}
+"}}}
+" Color Scheme {{{
+    "colorscheme   jellybeans
+    "colorscheme metacosm
+    colorscheme golden
+"}}}
+"   Search {{{
+set incsearch
+set hlsearch
+set showmatch
+"   }}}
+"    Experimental {{{
+"   set wildmenu
+"   set wildmode=list:longest,full
+"   }}}
