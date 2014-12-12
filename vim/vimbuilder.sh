@@ -2,6 +2,27 @@
 # Nicolas Silveira Kagami
 # VIM builder
 
+
+cd ~
+hg clone https://code.google.com/p/vim/
+cd vim
+./configure --with-features=huge \
+            --enable-multibyte \
+            --enable-rubyinterp \
+            --enable-pythoninterp \
+            --with-python-config-dir=/usr/lib/python2.7/config \
+            --enable-perlinterp \
+            --enable-luainterp \
+            --enable-gui=gtk2 --enable-cscope --prefix=/usr
+make VIMRUNTIMEDIR=/usr/share/vim/vim74
+make install
+update-alternatives --install /usr/bin/editor editor /usr/bin/vim 1
+update-alternatives --set editor /usr/bin/vim
+update-alternatives --install /usr/bin/vi vi /usr/bin/vim 1
+update-alternatives --set vi /usr/bin/vim
+
+
+
 BASEDIR=$(cd `dirname "${BASH_SOURCE[0]}"` && pwd)
 
 VIMRC_FILE="$BASEDIR/vimrc"

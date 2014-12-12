@@ -38,6 +38,9 @@ Plugin 'Raimondi/delimitMate'
 " Tagbar{{{
 Plugin 'majutsushi/tagbar'
 " }}}
+" YouCompleteMe{{{
+Plugin 'Valloric/YouCompleteMe'
+" }}}
 call vundle#end()
 "}}}
 " Cursor Settings {{{
@@ -102,7 +105,11 @@ augroup END
 " Color Scheme {{{
     "colorscheme   jellybeans
     "colorscheme metacosm
-    colorscheme golden
+    "colorscheme golden
+    "colorscheme adaryn
+    colorscheme adrian
+    hi Pmenu ctermfg=0 ctermbg=6 guibg=#444444
+    hi PmenuSel ctermfg=7 ctermbg=4 guibg=#555555 guifg=#ffffff
 "}}}
 "   Search {{{
 set incsearch
