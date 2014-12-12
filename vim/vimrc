@@ -19,25 +19,26 @@ set showcmd
 "   No audible bell
 set visualbell
 " }}}
-"   Bundles {{{
+"   Plugins {{{
 "   Vundle {{{
 filetype off            " Because Vundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
 "}}}
 "   Surround {{{
-Bundle 'tpope/vim-surround'
+Plugin 'tpope/vim-surround'
  "}}}
 "   Endwise {{{
-Bundle 'tpope/vim-endwise'
+Plugin 'tpope/vim-endwise'
 "}}}
 " DelimitMate{{{
-Bundle 'Raimondi/delimitMate'
+Plugin 'Raimondi/delimitMate'
 " }}}
 " Tagbar{{{
-Bundle 'majutsushi/tagbar'
+Plugin 'majutsushi/tagbar'
 " }}}
+call vundle#end()
 "}}}
 " Cursor Settings {{{
 "   Make cursor vertical on Insert Mode
