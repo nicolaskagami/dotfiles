@@ -38,9 +38,6 @@ Plugin 'Raimondi/delimitMate'
 " Tagbar{{{
 Plugin 'majutsushi/tagbar'
 " }}}
-" YouCompleteMe{{{
-Plugin 'Valloric/YouCompleteMe'
-" }}}
 call vundle#end()
 "}}}
 " Cursor Settings {{{
@@ -88,17 +85,17 @@ nnoremap <CR> :noh<CR><CR>
 filetype plugin indent on
 " C {{{
 augroup ft_c
-				au!
-				au FileType c setlocal foldmethod=marker foldmarker={,}
-				au FileType cpp setlocal foldmethod=marker foldmarker={,}
-				au FileType h setlocal foldmethod=marker foldmarker={,}
+au!
+au FileType c setlocal foldmethod=marker foldmarker={,}
+au FileType cpp setlocal foldmethod=marker foldmarker={,}
+au FileType h setlocal foldmethod=marker foldmarker={,}
 augroup END
 "}}}
 " Vim {{{
 augroup ft_vim
-	au!
-	au FileType vim setlocal foldmethod=marker
-	
+au!
+au FileType vim setlocal foldmethod=marker
+
 augroup END
 "}}}
 "}}}
