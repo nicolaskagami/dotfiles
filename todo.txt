@@ -1,0 +1,10 @@
+git
+bash
+fish?
+feh
+vlc
+mpv
+browser
+file manager
+pdf reader
+mendeley
