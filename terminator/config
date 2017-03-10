@@ -1,15 +1,18 @@
 [global_config]
-  title_hide_sizetext = True
   window_state = maximise
-  title_transmit_bg_color = "#EC5f67"
   always_split_with_profile = True
+  title_transmit_bg_color = "#EC5f67"
+  hide_from_taskbar = True
+  inactive_color_offset = 1.0
   title_inactive_bg_color = "#65737E"
 [keybindings]
 [profiles]
   [[default]]
+    scrollbar_position = hidden
     palette = "#2d2d2d:#f2777a:#99cc99:#ffcc66:#6699cc:#cc99cc:#66cccc:#d3d0c8:#747369:#f2777a:#99cc99:#ffcc66:#6699cc:#cc99cc:#66cccc:#f2f0ec"
-    font = DejaVu Sans Mono 10
+    font = DejaVu Sans Mono 12
     background_image = None
+    cursor_shape = ibeam
     use_system_font = False
     cursor_color = "#d3d0c8"
     foreground_color = "#d3d0c8"

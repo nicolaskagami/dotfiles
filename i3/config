@@ -1,25 +1,53 @@
 # Author: Nicolas Silveira Kagami
 # i3config
 #
+# Set colors
+set $colorbg #2c2833
+set $colorfg #dbd7b8
+set $colorblk #322d39
+set $colorbblk #4e4955
+set $colorred #bf6257
+set $colorgrn #82a37c
+set $colorylw #b7a16c
+set $colorblu #6d6a80
+set $colormag #825969
+set $colorcyn #938e8f
+set $colorwht #dbd7b8
+set $colorbred #bf6257
+set $colorbgrn #82a37c
+set $colorbylw #b7a16c
+set $colorbblu #6d6a80
+set $colorbmag #825969
+set $colorbcyn #938e8f
+set $colorbwht #dbd7b8
+
 set $mod Mod1
+
+font pango:DejaVu Sans Mono 10
 
 #Workspaces
 set $WS1 1:irc
 set $WS2 2:www
-set $WS3 3:term3
-set $WS4 4:term4
-set $WS5 5:term5
-set $WS6 6:term6
-set $WS7 7:term7
-set $WS8 8:term8
-set $WS9 9:term9
+set $WS3 3:term
+set $WS4 4:term
+set $WS5 5:term
+set $WS6 6:term
+set $WS7 7:term
+set $WS8 8:virt
+set $WS9 9:video
 set $WS10 0:music
 
-# Mate Terminal with no menu bar 
-bindsym $mod+Return exec mate-terminal --hide-menubar 
+bindsym $mod+Return exec terminator 
 
-# font for window titles. ISO 10646 = Unicode
-font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+# Set Window colors 
+client.focused $colorfg $colorbg $colorfg $colorblk $colorfg
+client.focused_inactive $colorfg $colorbg $colorfg $colorblk $colorfg
+client.unfocused $colorbg $colorbg $colorfg $colorblk $colorfg
+client.urgent $colorred $colorbg $colorfg $colorblk $colorfg
+client.background $colorblk
+
+# Set a border
+for_window [class="^.*"] border pixel 2
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -134,14 +162,13 @@ bindsym Control+Mod1+Right focus right
 bindsym Mod1+l exec i3lock -c 000000
 
 assign [class="Pidgin"] $WS1
-exec --no-startup-id i3-msg 'workspace $WS1; exec /usr/bin/pidgin'
-exec --no-startup-id "xset m 1 1"
+#exec --no-startup-id i3-msg 'workspace $WS1; exec /usr/bin/pidgin'
 
-workspace $WS1 output DVI-I-0
+# i3 Monitor Conf
+workspace $WS1 output DVI-I-1 
 workspace $WS2 output VGA-0
 workspace $WS3 output VGA-0
-workspace $WS10 output DVI-I-0
-font pango:DejaVu Sans Mono 10
+workspace $WS10 output DVI-I-1
 
 #focus_follows_mouse no
 for_window [window_role="pop-up"] floating enable
@@ -149,13 +176,31 @@ for_window [window_role="task_dialog"] floating enable
 
 popup_during_fullscreen leave_fullscreen 
 
-# End of Custom
-
 bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
+#bar {
+#        strip_workspace_numbers yes
+#        status_command i3status
+#}
+# The i3Bar
+
+
 bar {
-        strip_workspace_numbers yes
-        status_command i3status
+  position bottom
+  verbose yes
+  status_command i3status
+  font pango:DejaVu Sans Mono 12
+
+
+  colors {
+		    separator $colorfg
+			background $colorbg
+			statusline $colorfg
+			focused_workspace $colorfg $colorfg $colorbg
+			active_workspace $colorwht $colorwht $colorblk
+			inactive_workspace $colorbg $colorbg $colorfg
+			urgent_workspace $colorred $colorred $colorbg
+	}
 }
