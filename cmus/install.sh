@@ -1,3 +1,9 @@
 #!/bin/sh
-echo "Installing vim (repo)"
-sudo apt-get install -y vim
+echo "Installing cmus (repo)"
+check=`which cmus`
+if [ $? ]
+then
+    echo "Already Installed"
+else
+    sudo apt-get install -y cmus
+fi

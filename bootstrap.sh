@@ -1,13 +1,16 @@
 #!/bin/sh
 
 # General Stuff
-sudo apt-get install -y build-essential curl wget vim
+sudo apt-get install -y -qq build-essential curl wget
 
-sudo apt-get install -y i3 lightdm terminator zsh oh-my-zsh cmus
+sudo apt-get install -y -qq i3 lightdm
 
-cd i3
-bash ./builder.sh
-cd terminator 
-bash ./builder.sh
-cd zsh 
-bash ./builder.sh
+bash i3/install.sh
+bash vim/install.sh
+bash terminator/install.sh
+bash zsh/install.sh
+
+bash i3/build.sh
+bash vim/build.sh
+bash terminator/build.sh
+bash zsh/build.sh

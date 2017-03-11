@@ -1,3 +1,5 @@
+video resolution
+bootstrap persistence, no overwrite
 git
 bash
 fish?
