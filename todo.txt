@@ -1,5 +1,5 @@
-video resolution
 bootstrap persistence, no overwrite
+sound: Alsa tools
 git
 bash
 fish?
@@ -10,3 +10,4 @@ browser
 file manager
 pdf reader
 mendeley
+pidgin

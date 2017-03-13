@@ -23,7 +23,7 @@ then
         echo "Vim configuration file detected: Backing up to $BACKUP_FOLDER"
         mv $VIMRC_LOCATION $BACKUP_FOLDER/
     fi
-    ln -s $VIMRC_FILE $VIMRC_LOCATION
+    sudo ln -f -s $VIMRC_FILE $VIMRC_LOCATION
 fi
 
 if [ -d $VIM_FOLDER ]
@@ -33,7 +33,7 @@ then
         echo "Vim configuration folder detected: Backing up to $BACKUP_FOLDER"
         mv $VIM_FOLDER_LOCATION $BACKUP_FOLDER/
     fi
-    ln -s $VIM_FOLDER $VIM_FOLDER_LOCATION
+    sudo ln -f -s $VIM_FOLDER $VIM_FOLDER_LOCATION
 fi
 
 git clone https://github.com/gmarik/Vundle.vim ~/.vim/bundle/Vundle.vim

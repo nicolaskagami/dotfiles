@@ -5,10 +5,10 @@
 BASEDIR=$(cd `dirname "${BASH_SOURCE[0]}"` && pwd)
 BACKUP_FOLDER="$HOME/.dotfiles_backup"
 
-I3_FILE="$BASEDIR/config"
+I3_FILE="$BASEDIR/i3.conf"
 I3_LOCATION="$HOME/.i3/config"
 
-I3_STATUS="$BASEDIR/status/config"
+I3_STATUS="$BASEDIR/i3_status.conf"
 I3_STATUS_LOCATION="$HOME/.config/i3status/config"
 
 
@@ -23,7 +23,7 @@ if [ -f $I3_FILE ]
         echo "i3 configuration file detected: Backing up to $BACKUP_FOLDER"
         mv $I3_LOCATION $BACKUP_FOLDER/
     fi
-    ln -s $I3_FILE $I3_LOCATION
+    sudo ln -f -s $I3_FILE $I3_LOCATION
 fi
 
 
@@ -36,7 +36,7 @@ then
     else
         mkdir $HOME/.config/i3status
     fi
-    ln -s $I3_STATUS $I3_STATUS_LOCATION
+    sudo ln -f -s $I3_STATUS $I3_STATUS_LOCATION
 fi
 
 

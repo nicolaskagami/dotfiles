@@ -21,5 +21,5 @@ if [ -f $TERMINATOR_FILE ]
     else
         mkdir $HOME/.config/terminator
     fi
-    ln -s $TERMINATOR_FILE $TERMINATOR_LOCATION
+    sudo ln -f -s $TERMINATOR_FILE $TERMINATOR_LOCATION
 fi

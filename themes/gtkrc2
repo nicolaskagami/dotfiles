@@ -1,0 +1,10 @@
+gtk-can-change-accels = 1
+
+gtk-theme-name = "Arc-Dark"
+
+style "Standard"
+{
+    font_name="DejaVu Sans Mono 12"
+}
+widget_class "*" style "Standard"
+gtk-font-name = "DejaVu Sans Mono 12"
