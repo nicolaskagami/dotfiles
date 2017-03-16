@@ -6,7 +6,7 @@ fish?
 feh
 vlc
 mpv
-browser
+browser javascript 
 file manager
 pdf reader
 mendeley
