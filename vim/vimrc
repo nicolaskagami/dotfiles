@@ -39,6 +39,12 @@ Plugin 'Raimondi/delimitMate'
 " Tagbar{{{
 Plugin 'majutsushi/tagbar'
 " }}}
+" Experimental{{{
+Plugin 'scrooloose/nerdtree'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'vim-scripts/a.vim'
+Plugin 'Valloric/YouCompleteMe'
+" }}}
 call vundle#end()
 "}}}
 " Cursor Settings {{{
@@ -58,7 +64,7 @@ augroup END
 " }}}
 " Mappings {{{
 "   Tagbar
-nmap <leader>T :TagbarToggle<CR>
+nmap <leader>t :TagbarToggle<CR>
 "   Page Selecting
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
