@@ -38,3 +38,13 @@ fi
 
 git clone https://github.com/gmarik/Vundle.vim ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
+
+
+cd $VIM_FOLDER
+mkdir tags
+curl https://vim.sourceforge.io/scripts/download_script.php?src_id=9178 > cpp_src.tar.bz2
+tar jxf cpp_src.tar.bz2
+ctags -R --sort=1 --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++ -f cpp cpp_src
+ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++ -f sdl /usr/include/SDL2/ # for SDL
+mv cpp ./tags/
+mv sdl ./tags/

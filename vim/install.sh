@@ -5,5 +5,7 @@ if [ $? ]
 then
     echo "Already Installed"
 else
-    sudo apt-get install -y vim
+    sudo apt-get install -qq -y vim 
 fi
+sudo apt-get install -qq -y cscope exuberant-ctags
+update-alternatives --config ctags
