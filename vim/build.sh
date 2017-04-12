@@ -26,15 +26,8 @@ then
     sudo ln -f -s $VIMRC_FILE $VIMRC_LOCATION
 fi
 
-if [ -d $VIM_COLOR_FOLDER ]
-then
-    if [ -d $VIM_COLOR_FOLDER_LOCATION ]
-    then
-        echo "Vim configuration folder detected: Backing up to $BACKUP_FOLDER"
-        mv $VIM_COLOR_FOLDER_LOCATION $BACKUP_FOLDER/
-    fi
-    sudo ln -f -s $VIM_COLOR_FOLDER $VIM_COLOR_FOLDER_LOCATION
-fi
+mkdir $HOME/.vim
+sudo ln -f -s $VIM_COLOR_FOLDER $VIM_COLOR_FOLDER_LOCATION
 
 git clone https://github.com/gmarik/Vundle.vim ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
