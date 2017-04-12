@@ -7,5 +7,5 @@ then
 else
     sudo apt-get install -qq -y vim 
 fi
-sudo apt-get install -qq -y cscope exuberant-ctags
+sudo apt-get install -qq -y cscope exuberant-ctags clang
 update-alternatives --config ctags
