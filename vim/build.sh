@@ -34,6 +34,7 @@ vim +PluginInstall +qall
 
 curl http://www.vim.org/scripts/download_script.php?src_id=19588 > clang_complete.vmb
 vim clang_complete.vmb -c 'so %' -c 'q'
+rm clang_complete.vmb
 
 
 #cd $VIM_COLOR_FOLDER

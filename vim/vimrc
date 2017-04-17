@@ -41,17 +41,31 @@ Plugin 'Raimondi/delimitMate'
 " Tagbar{{{
 Plugin 'majutsushi/tagbar'
 " }}}
-" Experimental{{{
-Plugin 'scrooloose/nerdtree'
-Plugin 'ctrlpvim/ctrlp.vim'
+" A.vim {{{
 Plugin 'vim-scripts/a.vim'
-"Plugin 'vim-scripts/OmniCppComplete'
+" }}}
+" CTRL-P {{{
+Plugin 'ctrlpvim/ctrlp.vim'
+" }}}
+" CSCOPE {{{
 Plugin 'vim-scripts/cscope.vim'
+" }}}
+" OmniCPPComplete {{{
+Plugin 'vim-scripts/OmniCppComplete'
+" }}}
+" Experimental{{{
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+set laststatus=2
+set noshowmode
+set ttimeoutlen=10
+"Plugin 'justmao945/vim-clang'
+"Plugin 'scrooloose/nerdtree'
 " }}}
 call vundle#end()
 "}}}
 " Cursor Settings {{{
-"   Remember last position
+"   Remember last position {{{
 set viminfo='10,\"100,:20,%,n~/.viminfo'
 function! ResCur()
     if line("'\"") <= line("$")
@@ -65,23 +79,24 @@ augroup resCur
     autocmd BufWinEnter * call ResCur()
 augroup END
 " }}}
+" }}}
 " Completion {{{
 set tags+=~/.vim/tags/cpp
 set tags+=~/.vim/tags/sdl
 " build tags for custom project Ctrl-F12
 map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 " OmniCppComplete {{{
-"let OmniCpp_NamespaceSearch = 1
-"let OmniCpp_GlobalScopeSearch = 1
-"let OmniCpp_ShowAccess = 1
-"let OmniCpp_ShowPrototypeInAbbr = 1 " show function parameters
-"let OmniCpp_MayCompleteDot = 1 " autocomplete after .
-"let OmniCpp_MayCompleteArrow = 1 " autocomplete after ->
-"let OmniCpp_MayCompleteScope = 1 " autocomplete after ::
-"let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
+let OmniCpp_NamespaceSearch = 1
+let OmniCpp_GlobalScopeSearch = 1
+let OmniCpp_ShowAccess = 1
+let OmniCpp_ShowPrototypeInAbbr = 1 " show function parameters
+let OmniCpp_MayCompleteDot = 1 " autocomplete after .
+let OmniCpp_MayCompleteArrow = 1 " autocomplete after ->
+let OmniCpp_MayCompleteScope = 1 " autocomplete after ::
+let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 " automatically open and close the popup menu / preview window
-"au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
-"set completeopt=menuone,menu,longest,preview
+au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
+set completeopt=menuone,menu,longest,preview
 " }}}
 " }}}
 " Mappings {{{
@@ -147,9 +162,9 @@ augroup END
     "colorscheme metacosm
     "colorscheme golden
     "colorscheme adaryn
-    colorscheme adrian
-    hi Pmenu ctermfg=0 ctermbg=6 guibg=#444444
-    hi PmenuSel ctermfg=7 ctermbg=4 guibg=#555555 guifg=#ffffff
+    "colorscheme adrian
+    "hi Pmenu ctermfg=0 ctermbg=6 guibg=#444444
+    "hi PmenuSel ctermfg=7 ctermbg=4 guibg=#555555 guifg=#ffffff
 "}}}
 "   Search {{{
 set incsearch
