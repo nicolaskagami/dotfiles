@@ -54,11 +54,18 @@ Plugin 'vim-scripts/cscope.vim'
 Plugin 'vim-scripts/OmniCppComplete'
 " }}}
 " Experimental{{{
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+"Plugin 'vim-airline/vim-airline'
+"Plugin 'vim-airline/vim-airline-themes'
 set laststatus=2
 set noshowmode
-set ttimeoutlen=10
+Plugin 'itchyny/lightline.vim'
+let g:lightline = {
+      \ 'colorscheme': 'jellybeans',
+      \ }
+if !has('gui_running')
+  set t_Co=256
+endif
+"set ttimeoutlen=10
 "Plugin 'justmao945/vim-clang'
 "Plugin 'scrooloose/nerdtree'
 " }}}
@@ -163,6 +170,8 @@ augroup END
     "colorscheme golden
     "colorscheme adaryn
     "colorscheme adrian
+    "colorscheme seoul256
+    colorscheme jellybeans
     "hi Pmenu ctermfg=0 ctermbg=6 guibg=#444444
     "hi PmenuSel ctermfg=7 ctermbg=4 guibg=#555555 guifg=#ffffff
 "}}}
@@ -174,4 +183,6 @@ set showmatch
 "    Experimental {{{
 "   set wildmenu
 "   set wildmode=list:longest,full
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
 "   }}}
