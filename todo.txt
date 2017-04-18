@@ -2,7 +2,6 @@ bootstrap persistence, no overwrite
 sound: Alsa tools
 git
 bash
-fish?
 feh
 vlc
 mpv
@@ -10,4 +9,3 @@ browser javascript
 file manager
 pdf reader
 mendeley
-pidgin

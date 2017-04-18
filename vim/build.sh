@@ -8,6 +8,7 @@ BACKUP_FOLDER="$HOME/.dotfiles_backup"
 VIMRC_FILE="$BASEDIR/vimrc"
 VIMRC_LOCATION="$HOME/.vimrc"
 
+VIM_FOLDER="$HOME/.vim"
 VIM_COLOR_FOLDER="$BASEDIR/colors"
 VIM_COLOR_FOLDER_LOCATION="$HOME/.vim/colors"
 
@@ -29,7 +30,7 @@ fi
 mkdir $HOME/.vim
 sudo ln -f -s $VIM_COLOR_FOLDER $VIM_COLOR_FOLDER_LOCATION
 
-git clone https://github.com/gmarik/Vundle.vim ~/.vim/bundle/Vundle.vim
+git clone https://github.com/gmarik/Vundle.vim $HOME/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
 # Install Clang Complete
@@ -38,11 +39,9 @@ vim +PluginInstall +qall
 #rm clang_complete.vmb
 
 # Install Omnicppcomplete
-cd $VIM_COLOR_FOLDER
-mkdir tags
+mkdir $VIM_FOLDER/tags
+cd $VIM_FOLDER/tags
 curl https://vim.sourceforge.io/scripts/download_script.php?src_id=9178 > cpp_src.tar.bz2
 tar jxf cpp_src.tar.bz2
 ctags -R --sort=1 --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++ -f cpp cpp_src
 ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++ -f sdl /usr/include/SDL2/ # for SDL
-mv cpp ./tags/
-mv sdl ./tags/

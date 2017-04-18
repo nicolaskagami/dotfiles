@@ -1386,8 +1386,8 @@ _S_buffer_size	cpp_src/stl_deque.h	/^      static size_t _S_buffer_size()$/;"	f	
 _S_c_locale	cpp_src/locale_classes.h	/^    static __c_locale                   _S_c_locale;$/;"	m	class:std::locale::facet	access:private
 _S_c_name	cpp_src/locale_classes.h	/^    static const char			_S_c_name[2];$/;"	m	class:std::locale::facet	access:private
 _S_categories	cpp_src/locale_classes.h	/^    static const char* const* const _S_categories;$/;"	m	class:std::locale	access:private
-_S_categories_size	cpp_src/locale_classes.h	/^    enum { _S_categories_size = 6 + _GLIBCXX_NUM_CATEGORIES };$/;"	e	enum:std::locale::__anon2
-_S_chunk_size	cpp_src/stl_algo.h	/^  enum { _S_chunk_size = 7 };$/;"	e	enum:std::__anon7
+_S_categories_size	cpp_src/locale_classes.h	/^    enum { _S_categories_size = 6 + _GLIBCXX_NUM_CATEGORIES };$/;"	e	enum:std::locale::__anon7
+_S_chunk_size	cpp_src/stl_algo.h	/^  enum { _S_chunk_size = 7 };$/;"	e	enum:std::__anon5
 _S_classic	cpp_src/locale_classes.h	/^    static _Impl*       _S_classic;$/;"	m	class:std::locale	access:private
 _S_clone_c_locale	cpp_src/locale_classes.h	/^    _S_clone_c_locale(__c_locale& __cloc);$/;"	p	class:std::locale::facet	access:protected	signature:(__c_locale& __cloc)
 _S_construct	cpp_src/basic_string.h	/^         _S_construct(_InIterator __beg, _InIterator __end, const _Alloc& __a,$/;"	p	class:std::basic_string	access:private	signature:(_InIterator __beg, _InIterator __end, const _Alloc& __a, input_iterator_tag)
@@ -1451,7 +1451,7 @@ _S_ie	cpp_src/locale_facets.h	/^      _S_ie = _S_izero + 14,$/;"	e	enum:std::__n
 _S_iend	cpp_src/locale_facets.h	/^      _S_iend = 26$/;"	e	enum:std::__num_base::__anon10
 _S_iminus	cpp_src/locale_facets.h	/^      _S_iminus,$/;"	e	enum:std::__num_base::__anon10
 _S_in	cpp_src/ios_base.h	/^      _S_in 		= 1L << 3,$/;"	e	enum:std::_Ios_Openmode
-_S_initial_map_size	cpp_src/stl_deque.h	/^      enum { _S_initial_map_size = 8 };$/;"	e	enum:std::_Deque_base::__anon8
+_S_initial_map_size	cpp_src/stl_deque.h	/^      enum { _S_initial_map_size = 8 };$/;"	e	enum:std::_Deque_base::__anon1
 _S_initialize	cpp_src/locale_classes.h	/^    _S_initialize();$/;"	p	class:std::locale	access:private	signature:()
 _S_initialize_once	cpp_src/locale_classes.h	/^    _S_initialize_once();$/;"	p	class:std::locale	access:private	signature:()
 _S_initialize_once	cpp_src/locale_classes.h	/^    _S_initialize_once();$/;"	p	class:std::locale::facet	access:private	signature:()
@@ -1468,7 +1468,7 @@ _S_key	cpp_src/stl_tree.h	/^      _S_key(_Const_Link_type __x)$/;"	f	class:std::
 _S_left	cpp_src/ios_base.h	/^      _S_left 		= 1L << 5,$/;"	e	enum:std::_Ios_Fmtflags
 _S_left	cpp_src/stl_tree.h	/^      _S_left(_Base_ptr __x)$/;"	f	class:std::_Rb_tree	access:protected	signature:(_Base_ptr __x)
 _S_left	cpp_src/stl_tree.h	/^      _S_left(_Const_Base_ptr __x)$/;"	f	class:std::_Rb_tree	access:protected	signature:(_Const_Base_ptr __x)
-_S_local_word_size	cpp_src/ios_base.h	/^    enum { _S_local_word_size = 8 };$/;"	e	enum:std::ios_base::__anon1
+_S_local_word_size	cpp_src/ios_base.h	/^    enum { _S_local_word_size = 8 };$/;"	e	enum:std::ios_base::__anon8
 _S_maskbit	cpp_src/bitset	/^      _S_maskbit(size_t __pos )$/;"	f	struct:std::_Base_bitset	access:public	signature:(size_t __pos )
 _S_max_size	cpp_src/basic_string.h	/^	static const size_type	_S_max_size;$/;"	m	struct:std::basic_string::_Rep	access:public
 _S_max_size	cpp_src/basic_string.tcc	/^    _Rep::_S_max_size = (((npos - sizeof(_Rep_base))\/sizeof(_CharT)) - 1) \/ 4;$/;"	m	class:std::basic_string::_Rep	file:
@@ -1513,7 +1513,7 @@ _S_skipws	cpp_src/ios_base.h	/^      _S_skipws 	= 1L << 12,$/;"	e	enum:std::_Ios
 _S_synced_with_stdio	cpp_src/ios_base.h	/^      static bool		_S_synced_with_stdio;$/;"	m	class:std::ios_base::Init	access:private
 _S_terminal	cpp_src/basic_string.h	/^	static const _CharT	_S_terminal;$/;"	m	struct:std::basic_string::_Rep	access:public
 _S_terminal	cpp_src/basic_string.tcc	/^    _Rep::_S_terminal = _CharT();$/;"	m	class:std::basic_string::_Rep	file:
-_S_threshold	cpp_src/stl_algo.h	/^  enum { _S_threshold = 16 };$/;"	e	enum:std::__anon6
+_S_threshold	cpp_src/stl_algo.h	/^  enum { _S_threshold = 16 };$/;"	e	enum:std::__anon4
 _S_timezones	cpp_src/locale_facets.h	/^      static const _CharT*		_S_timezones[14];$/;"	m	struct:std::__timepunct_cache	access:public
 _S_timezones	cpp_src/locale_facets.h	/^    __timepunct_cache<char>::_S_timezones[14];$/;"	m	class:std::__timepunct_cache
 _S_timezones	cpp_src/locale_facets.h	/^    __timepunct_cache<wchar_t>::_S_timezones[14];$/;"	m	class:std::__timepunct_cache
@@ -1526,7 +1526,7 @@ _S_value	cpp_src/stl_tree.h	/^      _S_value(_Const_Link_type __x)$/;"	f	class:s
 _S_whichbit	cpp_src/bitset	/^      _S_whichbit(size_t __pos )$/;"	f	struct:std::_Base_bitset	access:public	signature:(size_t __pos )
 _S_whichbyte	cpp_src/bitset	/^      _S_whichbyte(size_t __pos )$/;"	f	struct:std::_Base_bitset	access:public	signature:(size_t __pos )
 _S_whichword	cpp_src/bitset	/^      _S_whichword(size_t __pos )$/;"	f	struct:std::_Base_bitset	access:public	signature:(size_t __pos )
-_S_word_bit	cpp_src/stl_bvector.h	/^  enum { _S_word_bit = int(CHAR_BIT * sizeof(_Bit_type)) };$/;"	e	enum:std::__anon3
+_S_word_bit	cpp_src/stl_bvector.h	/^  enum { _S_word_bit = int(CHAR_BIT * sizeof(_Bit_type)) };$/;"	e	enum:std::__anon6
 _S_zero	cpp_src/locale_facets.h	/^      _S_zero,$/;"	e	enum:std::money_base::__anon11
 _SameTypeConcept	cpp_src/boost_concept_check.h	/^  struct _SameTypeConcept$/;"	s
 _SameTypeConcept::__constraints	cpp_src/boost_concept_check.h	/^    void __constraints() {$/;"	f	struct:_SameTypeConcept	access:public	signature:()
@@ -1688,7 +1688,7 @@ __advance	cpp_src/stl_iterator_base_funcs.h	/^    __advance(_InputIterator& __i,
 __advance	cpp_src/stl_iterator_base_funcs.h	/^    __advance(_RandomAccessIterator& __i, _Distance __n,$/;"	f	namespace:std	signature:(_RandomAccessIterator& __i, _Distance __n, random_access_iterator_tag)
 __alloc_swap	cpp_src/allocator.h	/^    struct __alloc_swap$/;"	s	namespace:std
 __alloc_swap	cpp_src/allocator.h	/^    struct __alloc_swap<_Alloc, false>$/;"	s	namespace:std
-__anon5::__fill	cpp_src/cwchar	/^    int __fill[6];$/;"	m	struct:__anon5	file:	access:public
+__anon3::__fill	cpp_src/cwchar	/^    int __fill[6];$/;"	m	struct:__anon3	file:	access:public
 __arg	cpp_src/boost_concept_check.h	/^    _Arg __arg;$/;"	m	struct:_UnaryFunctionConcept	access:public
 __arg	cpp_src/boost_concept_check.h	/^    _Arg __arg;$/;"	m	struct:_UnaryPredicateConcept	access:public
 __asin	cpp_src/valarray_before.h	/^  struct __asin$/;"	s	namespace:std
@@ -1941,7 +1941,7 @@ __filebuf_type	cpp_src/fstream	/^      typedef basic_filebuf<char_type, traits_t
 __filebuf_type	cpp_src/fstream	/^      typedef basic_filebuf<char_type, traits_type> 	__filebuf_type;$/;"	t	class:std::basic_ifstream	file:	access:public
 __filebuf_type	cpp_src/fstream	/^      typedef basic_filebuf<char_type, traits_type> 	__filebuf_type;$/;"	t	class:std::basic_ofstream	file:	access:public
 __filebuf_type	cpp_src/fstream	/^      typedef basic_filebuf<char_type, traits_type>     __filebuf_type;$/;"	t	class:std::basic_filebuf	file:	access:public
-__fill	cpp_src/cwchar	/^    int __fill[6];$/;"	m	struct:__anon5	file:	access:public
+__fill	cpp_src/cwchar	/^    int __fill[6];$/;"	m	struct:__anon3	file:	access:public
 __fill	cpp_src/stl_algobase.h	/^    struct __fill$/;"	s	namespace:std
 __fill	cpp_src/stl_algobase.h	/^    struct __fill<true>$/;"	s	namespace:std
 __fill_bvector	cpp_src/stl_bvector.h	/^  __fill_bvector(_Bit_iterator __first, _Bit_iterator __last, bool __x)$/;"	f	namespace:std	signature:(_Bit_iterator __first, _Bit_iterator __last, bool __x)
@@ -4013,7 +4013,7 @@ mbrlen	cpp_src/cwchar	87;"	d	file:
 mbrtowc	cpp_src/cwchar	88;"	d	file:
 mbsinit	cpp_src/cwchar	89;"	d	file:
 mbsrtowcs	cpp_src/cwchar	90;"	d	file:
-mbstate_t	cpp_src/cwchar	/^  } mbstate_t;$/;"	t	typeref:struct:__anon5	file:
+mbstate_t	cpp_src/cwchar	/^  } mbstate_t;$/;"	t	typeref:struct:__anon3	file:
 mdy	cpp_src/locale_facets.h	/^    enum dateorder { no_order, dmy, mdy, ymd, ydm };$/;"	e	enum:std::time_base::dateorder
 mem_fun1_ref_t	cpp_src/stl_function.h	/^    class mem_fun1_ref_t : public binary_function<_Tp, _Arg, _Ret>$/;"	c	namespace:std	inherits:binary_function
 mem_fun1_t	cpp_src/stl_function.h	/^    class mem_fun1_t : public binary_function<_Tp*, _Arg, _Ret>$/;"	c	namespace:std	inherits:binary_function
@@ -6100,7 +6100,7 @@ std::_Deque_base::_M_impl	cpp_src/stl_deque.h	/^      _Deque_impl _M_impl;$/;"	m
 std::_Deque_base::_M_initialize_map	cpp_src/stl_deque.h	/^      void _M_initialize_map(size_t);$/;"	p	class:std::_Deque_base	access:protected	signature:(size_t)
 std::_Deque_base::_M_initialize_map	cpp_src/stl_deque.h	/^    _M_initialize_map(size_t __num_elements)$/;"	f	class:std::_Deque_base	signature:(size_t __num_elements)
 std::_Deque_base::_Map_alloc_type	cpp_src/stl_deque.h	/^      typedef typename _Alloc::template rebind<_Tp*>::other _Map_alloc_type;$/;"	t	class:std::_Deque_base	access:protected
-std::_Deque_base::_S_initial_map_size	cpp_src/stl_deque.h	/^      enum { _S_initial_map_size = 8 };$/;"	e	enum:std::_Deque_base::__anon8
+std::_Deque_base::_S_initial_map_size	cpp_src/stl_deque.h	/^      enum { _S_initial_map_size = 8 };$/;"	e	enum:std::_Deque_base::__anon1
 std::_Deque_base::_Tp_alloc_type	cpp_src/stl_deque.h	/^      typedef typename _Alloc::template rebind<_Tp>::other  _Tp_alloc_type;$/;"	t	class:std::_Deque_base	access:protected
 std::_Deque_base::allocator_type	cpp_src/stl_deque.h	/^      typedef _Alloc                  allocator_type;$/;"	t	class:std::_Deque_base	access:public
 std::_Deque_base::const_iterator	cpp_src/stl_deque.h	/^      typedef _Deque_iterator<_Tp, const _Tp&, const _Tp*> const_iterator;$/;"	t	class:std::_Deque_base	access:public
@@ -6555,7 +6555,7 @@ std::_S_beg	cpp_src/ios_base.h	/^      _S_beg = 0,$/;"	e	enum:std::_Ios_Seekdir
 std::_S_bin	cpp_src/ios_base.h	/^      _S_bin 		= 1L << 2,$/;"	e	enum:std::_Ios_Openmode
 std::_S_black	cpp_src/stl_tree.h	/^  enum _Rb_tree_color { _S_red = false, _S_black = true };$/;"	e	enum:std::_Rb_tree_color
 std::_S_boolalpha	cpp_src/ios_base.h	/^      _S_boolalpha 	= 1L << 0,$/;"	e	enum:std::_Ios_Fmtflags
-std::_S_chunk_size	cpp_src/stl_algo.h	/^  enum { _S_chunk_size = 7 };$/;"	e	enum:std::__anon7
+std::_S_chunk_size	cpp_src/stl_algo.h	/^  enum { _S_chunk_size = 7 };$/;"	e	enum:std::__anon5
 std::_S_cur	cpp_src/ios_base.h	/^      _S_cur = SEEK_CUR,$/;"	e	enum:std::_Ios_Seekdir
 std::_S_dec	cpp_src/ios_base.h	/^      _S_dec 		= 1L << 1,$/;"	e	enum:std::_Ios_Fmtflags
 std::_S_end	cpp_src/ios_base.h	/^      _S_end = SEEK_END,$/;"	e	enum:std::_Ios_Seekdir
@@ -6581,11 +6581,11 @@ std::_S_showbase	cpp_src/ios_base.h	/^      _S_showbase 	= 1L << 9,$/;"	e	enum:s
 std::_S_showpoint	cpp_src/ios_base.h	/^      _S_showpoint 	= 1L << 10,$/;"	e	enum:std::_Ios_Fmtflags
 std::_S_showpos	cpp_src/ios_base.h	/^      _S_showpos 	= 1L << 11,$/;"	e	enum:std::_Ios_Fmtflags
 std::_S_skipws	cpp_src/ios_base.h	/^      _S_skipws 	= 1L << 12,$/;"	e	enum:std::_Ios_Fmtflags
-std::_S_threshold	cpp_src/stl_algo.h	/^  enum { _S_threshold = 16 };$/;"	e	enum:std::__anon6
+std::_S_threshold	cpp_src/stl_algo.h	/^  enum { _S_threshold = 16 };$/;"	e	enum:std::__anon4
 std::_S_trunc	cpp_src/ios_base.h	/^      _S_trunc 		= 1L << 5,$/;"	e	enum:std::_Ios_Openmode
 std::_S_unitbuf	cpp_src/ios_base.h	/^      _S_unitbuf 	= 1L << 13,$/;"	e	enum:std::_Ios_Fmtflags
 std::_S_uppercase	cpp_src/ios_base.h	/^      _S_uppercase 	= 1L << 14,$/;"	e	enum:std::_Ios_Fmtflags
-std::_S_word_bit	cpp_src/stl_bvector.h	/^  enum { _S_word_bit = int(CHAR_BIT * sizeof(_Bit_type)) };$/;"	e	enum:std::__anon3
+std::_S_word_bit	cpp_src/stl_bvector.h	/^  enum { _S_word_bit = int(CHAR_BIT * sizeof(_Bit_type)) };$/;"	e	enum:std::__anon6
 std::_Sanitize	cpp_src/bitset	/^    struct _Sanitize$/;"	s	namespace:std	file:
 std::_Sanitize	cpp_src/bitset	/^    struct _Sanitize<0>$/;"	s	namespace:std	file:
 std::_Sanitize::_S_do_sanitize	cpp_src/bitset	/^      static void _S_do_sanitize(unsigned long& __val)$/;"	f	struct:std::_Sanitize	access:public	signature:(unsigned long& __val)
@@ -8920,7 +8920,7 @@ std::ios_base::_M_width	cpp_src/ios_base.h	/^    streamsize		_M_width;$/;"	m	cla
 std::ios_base::_M_word	cpp_src/ios_base.h	/^    _Words*		_M_word;$/;"	m	class:std::ios_base	access:protected
 std::ios_base::_M_word_size	cpp_src/ios_base.h	/^    int			_M_word_size;$/;"	m	class:std::ios_base	access:protected
 std::ios_base::_M_word_zero	cpp_src/ios_base.h	/^    _Words		_M_word_zero;$/;"	m	class:std::ios_base	access:protected
-std::ios_base::_S_local_word_size	cpp_src/ios_base.h	/^    enum { _S_local_word_size = 8 };$/;"	e	enum:std::ios_base::__anon1
+std::ios_base::_S_local_word_size	cpp_src/ios_base.h	/^    enum { _S_local_word_size = 8 };$/;"	e	enum:std::ios_base::__anon8
 std::ios_base::_Words	cpp_src/ios_base.h	/^    struct _Words$/;"	s	class:std::ios_base	access:protected
 std::ios_base::_Words::_M_iword	cpp_src/ios_base.h	/^      long	_M_iword;$/;"	m	struct:std::ios_base::_Words	access:public
 std::ios_base::_Words::_M_pword	cpp_src/ios_base.h	/^      void*	_M_pword;$/;"	m	struct:std::ios_base::_Words	access:public
@@ -9226,7 +9226,7 @@ std::locale::_Impl::~_Impl	cpp_src/locale_classes.h	/^   ~_Impl() throw();$/;"	p
 std::locale::_M_coalesce	cpp_src/locale_classes.h	/^    _M_coalesce(const locale& __base, const locale& __add, category __cat);$/;"	p	class:std::locale	access:private	signature:(const locale& __base, const locale& __add, category __cat)
 std::locale::_M_impl	cpp_src/locale_classes.h	/^    _Impl*		_M_impl;$/;"	m	class:std::locale	access:private
 std::locale::_S_categories	cpp_src/locale_classes.h	/^    static const char* const* const _S_categories;$/;"	m	class:std::locale	access:private
-std::locale::_S_categories_size	cpp_src/locale_classes.h	/^    enum { _S_categories_size = 6 + _GLIBCXX_NUM_CATEGORIES };$/;"	e	enum:std::locale::__anon2
+std::locale::_S_categories_size	cpp_src/locale_classes.h	/^    enum { _S_categories_size = 6 + _GLIBCXX_NUM_CATEGORIES };$/;"	e	enum:std::locale::__anon7
 std::locale::_S_classic	cpp_src/locale_classes.h	/^    static _Impl*       _S_classic;$/;"	m	class:std::locale	access:private
 std::locale::_S_global	cpp_src/locale_classes.h	/^    static _Impl*	_S_global;$/;"	m	class:std::locale	access:private
 std::locale::_S_initialize	cpp_src/locale_classes.h	/^    _S_initialize();$/;"	p	class:std::locale	access:private	signature:()

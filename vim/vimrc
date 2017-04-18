@@ -20,7 +20,7 @@ set showcmd
 set visualbell
 set t_vb=
 " Omnicomplete
-"set omnifunc=syntaxcomplete#Complete
+set omnifunc=syntaxcomplete#Complete
 " }}}
 "   Plugins {{{
 "   Vundle {{{
@@ -65,6 +65,9 @@ let g:lightline = {
 if !has('gui_running')
   set t_Co=256
 endif
+Plugin 'octol/vim-cpp-enhanced-highlight'
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
 "set ttimeoutlen=10
 "Plugin 'justmao945/vim-clang'
 "Plugin 'scrooloose/nerdtree'
@@ -152,7 +155,7 @@ filetype plugin indent on
 augroup ft_c
 au!
 au FileType c setlocal foldmethod=marker foldmarker={,}
-"au FileType cpp setlocal foldmethod=marker foldmarker={,}
+au FileType cpp setlocal foldmethod=marker foldmarker={,}
 au FileType h setlocal foldmethod=marker foldmarker={,}
 augroup END
 "}}}
@@ -171,7 +174,8 @@ augroup END
     "colorscheme adaryn
     "colorscheme adrian
     "colorscheme seoul256
-    colorscheme jellybeans
+    colorscheme wombat256
+    "colorscheme jellybeans
     "hi Pmenu ctermfg=0 ctermbg=6 guibg=#444444
     "hi PmenuSel ctermfg=7 ctermbg=4 guibg=#555555 guifg=#ffffff
 "}}}
