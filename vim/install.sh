@@ -1,7 +1,7 @@
 #!/bin/sh
 echo "Installing vim (repo)"
 check=`which vim`
-if [ $? ]
+if [ $? = 0 ]
 then
     echo "Already Installed"
 else

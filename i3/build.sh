@@ -6,7 +6,7 @@ BASEDIR=$(cd `dirname "${BASH_SOURCE[0]}"` && pwd)
 BACKUP_FOLDER="$HOME/.dotfiles_backup"
 
 I3_FILE="$BASEDIR/i3.conf"
-I3_LOCATION="$HOME/.i3/config"
+I3_LOCATION="$HOME/.config/i3/config"
 
 I3_STATUS="$BASEDIR/i3_status.conf"
 I3_STATUS_LOCATION="$HOME/.config/i3status/config"

@@ -1,7 +1,7 @@
 #!/bin/sh
 echo "Installing cmus (repo)"
 check=`which cmus`
-if [ $? ]
+if [ $? = 0 ]
 then
     echo "Already Installed"
 else
