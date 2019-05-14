@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # General Stuff
-sudo apt-get install -y -qq build-essential curl wget
+sudo apt-get install -y -qq build-essential curl wget jq 
 
 sudo apt-get install -y -qq i3
 
