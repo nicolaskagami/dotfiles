@@ -1,0 +1,12 @@
+#!/bin/bash
+
+FORMAT="${BLOCK_INSTANCE:-%H:%M}"
+DATETIME=$(date "+${FORMAT}")
+
+if [[ "${BLOCK_BUTTON}" == "3" ]]; then
+    zenity --calendar
+fi
+
+echo "${DATETIME}"
+echo "${DATETIME}"
+echo ""
