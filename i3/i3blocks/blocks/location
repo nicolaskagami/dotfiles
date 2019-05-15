@@ -2,10 +2,10 @@
 
 LOCATION_FILE="/tmp/current_location.txt"
 
-PUBLIC_IP="$(curl -s https://ipinfo.io/ip)"
+#PUBLIC_IP="$(curl -s https://ipinfo.io/ip)"
 #COORDINATES="$(curl -s https://ipvigilante.com/$PUBLIC_IP)"
-COORDINATES="$(curl -s https://ipapi.co/$PUBLIC_IP/json)"
-if jq -e . >/dev/null 2>&1 <<< echo $COORDINATES; then
+COORDINATES="$(curl -s https://ipapi.co/json)"
+if jq -e . >/dev/null 2>&1 <<<"$COORDINATES"; then
     echo $COORDINATES > $LOCATION_FILE
 fi
 echo "$(cat $LOCATION_FILE | jq -r '.city')"

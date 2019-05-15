@@ -4,7 +4,7 @@ gtk-theme-name = "Arc-Dark"
 
 style "Standard"
 {
-    font_name="DejaVu Sans Mono 10"
+    font_name="DejaVu Sans Mono 12"
 }
 widget_class "*" style "Standard"
-gtk-font-name = "DejaVu Sans Mono 10"
+gtk-font-name = "DejaVu Sans Mono 12"

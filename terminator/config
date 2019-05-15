@@ -20,17 +20,16 @@
 [profiles]
   [[default]]
     allow_bold = False
-    background_color = "#2d2d2d"
     copy_on_selection = True
     cursor_blink = False
     cursor_color = "#d3d0c8"
     cursor_shape = ibeam
-    font = Monospace 12
-    foreground_color = "#d3d0c8"
+    font = DejaVu Sans Mono 14
     palette = "#2d2d2d:#f2777a:#99cc99:#ffcc66:#6699cc:#cc99cc:#66cccc:#d3d0c8:#747369:#f2777a:#99cc99:#ffcc66:#6699cc:#cc99cc:#66cccc:#f2f0ec"
     scrollbar_position = hidden
     show_titlebar = False
     use_system_font = False
+    use_theme_colors = True
   [[Base16 Google Dark]]
     allow_bold = False
     background_color = "#1d1f21"
@@ -55,3 +54,10 @@
     palette = "#2b303b:#bf616a:#a3be8c:#ebcb8b:#8fa1b3:#b48ead:#96b5b4:#c0c5ce:#65737e:#bf616a:#a3be8c:#ebcb8b:#8fa1b3:#b48ead:#96b5b4:#eff1f5"
     show_titlebar = False
     use_system_font = False
+  [[New Profile]]
+    allow_bold = False
+    cursor_blink = False
+    cursor_color = "#aaaaaa"
+    cursor_shape = ibeam
+    show_titlebar = False
+    use_theme_colors = True
