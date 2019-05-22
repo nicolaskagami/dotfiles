@@ -21,6 +21,10 @@ set visualbell
 set t_vb=
 " Omnicomplete
 set omnifunc=syntaxcomplete#Complete
+" Background Color Erase
+if &term =~ '256color'
+    set t_ut=
+endif
 " }}}
 "   Plugins {{{
 "   Vundle {{{
