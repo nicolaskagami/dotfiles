@@ -155,14 +155,6 @@ nnoremap <CR> :noh<CR><CR>
 " }}}
 " File Types {{{
 filetype plugin indent on
-" C {{{
-augroup ft_c
-au!
-au FileType c setlocal foldmethod=marker foldmarker={,}
-au FileType cpp setlocal foldmethod=marker foldmarker={,}
-au FileType h setlocal foldmethod=marker foldmarker={,}
-augroup END
-"}}}
 " Vim {{{
 augroup ft_vim
 au!
