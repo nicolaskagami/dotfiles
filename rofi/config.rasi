@@ -1,0 +1,49 @@
+configuration {
+matching: "prefix";
+drun-match-fields: "generic";
+modi: "run,drun,window,ssh";
+width: 1800;
+lines: 40;
+eh: 1;
+padding: 20;
+sidebar-mode: false;
+font: "DejaVu Sans Mono 16";
+columns: 1;
+kb-mode-next: "Alt+Tab,Alt+Right";
+kb-mode-previous: "Alt+Shift+Tab,Alt+Left";
+
+drun-icon-theme: "Papirus";
+show-icons: true;
+
+color-enabled: true;
+separator-style: "solid";
+fullscreen: true;
+
+terminal: "terminator";
+case-sensitive: false;
+cycle: true;
+line-margin: 0;
+line-padding: 6 ;
+
+location: 0;
+ssh-client: "ssh";
+ssh-command: "{terminal} -e {ssh-client} {host}";
+parse-hosts: false;
+parse-known-hosts: true;
+
+color-window: "CC404552, CCD3DAE3, CCD3DAE3";
+color-normal: "031d1f21, #c4cbd4, 0031d1f2, #4084d6, #f9f9f9";
+color-urgent: "2c1d1f21, #cc6666, e54b5160, #a54242, #f9f9f9";
+color-active: "2c1d1f21, #65acff, e44b5160, #4491ed, #f9f9f9";
+
+}
+listview {
+	lines: 10;
+	columns: 1;
+}
+
+window {
+	width: 50%;
+}
+@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+element-icon { size: 4ch ; }
