@@ -2,8 +2,8 @@
 
 # General Stuff
 sudo apt-get install -y -qq build-essential curl wget jq 
-
 sudo apt-get install -y -qq i3
+sudo apt install -y -qq lxappearance gtk-chtheme 
 
 bash i3/install.sh
 bash vim/install.sh

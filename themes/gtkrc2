@@ -1,10 +1,14 @@
-gtk-can-change-accels = 1
+# -- THEME AUTO-WRITTEN DO NOT EDIT
+include "/usr/share/themes/Arc-Dark/gtk-2.0/gtkrc"
 
-gtk-theme-name = "Arc-Dark"
-
-style "Standard"
-{
-    font_name="DejaVu Sans Mono 12"
+style "user-font" {
+	font_name = "DejaVu Sans Mono 12"
 }
-widget_class "*" style "Standard"
-gtk-font-name = "DejaVu Sans Mono 12"
+
+widget_class "*" style "user-font"
+
+gtk-font-name="DejaVu Sans Mono 12"
+
+include "/home/nicolassk/.gtkrc.mine"
+
+# -- THEME AUTO-WRITTEN DO NOT EDIT
