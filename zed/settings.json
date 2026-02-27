@@ -1,0 +1,71 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "show_wrap_guides": false,
+  "search": {
+    "button": false,
+  },
+  "bottom_dock_layout": "contained",
+  "tab_bar": {
+    "show_tab_bar_buttons": false,
+    "show_nav_history_buttons": false,
+    "show": true,
+  },
+  "tabs": {
+    "activate_on_close": "left_neighbour",
+    "close_position": "right",
+    "file_icons": false,
+    "git_status": false,
+  },
+  "title_bar": {
+    "show_menus": false,
+    "show_branch_icon": true,
+  },
+  "status_bar": {
+    "active_encoding_button": "non_utf8",
+    "active_language_button": true,
+  },
+  "git_panel": {
+    "tree_view": false,
+  },
+  "terminal": {
+    "toolbar": {
+      "breadcrumbs": false,
+    },
+    "dock": "bottom",
+  },
+  "project_panel": {
+    "button": true,
+    "git_status": true,
+  },
+  "soft_wrap": "none",
+  "minimap": {
+    "show": "never",
+  },
+  "relative_line_numbers": "enabled",
+  "drag_and_drop_selection": {
+    "enabled": false,
+  },
+  "double_click_in_multibuffer": "open",
+  "vim": {
+    "toggle_relative_line_numbers": true,
+    "use_system_clipboard": "never",
+  },
+  "inlay_hints": {
+    "enabled": true,
+  },
+  "vim_mode": true,
+  "ui_font_size": 18.0,
+  "buffer_font_size": 18.0,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark",
+  },
+}

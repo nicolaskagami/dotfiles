@@ -1,0 +1,290 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-shift-tab": "pane::ActivatePreviousItem",
+      "ctrl-tab": "pane::ActivateNextItem",
+      "ctrl-1": ["pane::ActivateItem", 0],
+      "ctrl-2": ["pane::ActivateItem", 1],
+      "ctrl-3": ["pane::ActivateItem", 2],
+      "ctrl-4": ["pane::ActivateItem", 3],
+      "ctrl-5": ["pane::ActivateItem", 4],
+      "ctrl-6": ["pane::ActivateItem", 5],
+      "ctrl-7": ["pane::ActivateItem", 6],
+      "ctrl-8": ["pane::ActivateItem", 7],
+      "ctrl-9": ["pane::ActivateItem", 8],
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore"
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-c": "editor::Copy",
+      "ctrl-x": "editor::Cut",
+    },
+  },
+  {
+    "context": "vim_mode == insert",
+    "bindings": {
+      "ctrl-v": "editor::Paste",
+    },
+  },
+  {
+    "context": "vim_mode == replace",
+    "bindings": {
+      "ctrl-v": "editor::Paste",
+    },
+  },
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "ctrl-v": "editor::Paste",
+    },
+  },
+  {
+    "context": "vim_mode == normal",
+    "bindings": {
+      "ctrl-v": "editor::Paste",
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-o": [
+        "projects::OpenRecent",
+        {
+          "create_new_window": false,
+        },
+      ],
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-alt-o": null,
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-k ctrl-f": "workspace::OpenFiles",
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-w": "pane::CloseActiveItem",
+    },
+  },
+  {
+    "context": "(Editor && (showing_code_actions || showing_completions))",
+    "bindings": {
+      "ctrl-shift-n": "editor::ContextMenuPrevious",
+    },
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-t": "workspace::ToggleBottomDock",
+      "ctrl-n": "workspace::NewTerminal",
+    },
+  },
+  {
+    "context": "!Terminal",
+    "bindings": {
+      "ctrl-t": "terminal_panel::ToggleFocus",
+    },
+  },
+  {
+    "context": "(Editor && (vim_mode == normal || vim_mode == visual)) || !Editor",
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-s": "workspace::Save",
+    },
+  },
+  {
+    "context": "((vim_mode == helix_normal || vim_mode == helix_select) && !menu)",
+    "bindings": {
+      "alt-shift-p": "editor::SelectPreviousSyntaxNode",
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-i": "agent::FocusUp",
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-j": "agent::FocusLeft",
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-k": "agent::FocusDown",
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-l": "agent::FocusRight",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-shift-tab": null,
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-tab": null,
+    },
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "pageup": "vim::PageUp",
+    },
+  },
+  {
+    "context": "(((vim_mode == insert || vim_mode == normal) && showing_signature_help) && !showing_completions)",
+    "bindings": {
+      "super-p": "editor::SignatureHelpPrevious",
+    },
+  },
+  {
+    "context": "(((vim_mode == insert || vim_mode == normal) && showing_signature_help) && !showing_completions)",
+    "bindings": {
+      "up": "editor::SignatureHelpPrevious",
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-p": "file_finder::Toggle",
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-shift-o": "workspace::OpenFiles",
+    },
+  },
+  {
+    "context": "vim_mode == normal",
+    "bindings": {
+      "ctrl-shift-a": "vim::Increment",
+    },
+  },
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "ctrl-shift-a": "vim::Increment",
+    },
+  },
+  {
+    "context": "vim_mode == helix_select",
+    "bindings": {
+      "ctrl-shift-a": "vim::Increment",
+    },
+  },
+  {
+    "context": "((vim_mode == normal || vim_mode == helix_normal) && !menu)",
+    "bindings": {
+      "ctrl-shift-a": "vim::Increment",
+    },
+  },
+  {
+    "context": "vim_mode == literal",
+    "bindings": {
+      "ctrl-shift-a": ["vim::Literal", ["ctrl-a", "\u0001"]],
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-b": "workspace::ToggleLeftDock",
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-e": "project_panel::ToggleFocus",
+    },
+  },
+  {
+    "context": "AgentPanel",
+    "bindings": {
+      "ctrl-e": "project_panel::ToggleFocus",
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-g": "git_panel::ToggleFocus",
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-a": "editor::SelectAll",
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-+": [
+        "zed::IncreaseBufferFontSize",
+        {
+          "persist": false,
+        },
+      ],
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-_": [
+        "zed::DecreaseBufferFontSize",
+        {
+          "persist": false,
+        },
+      ],
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-'": "editor::GoToDefinition",
+    },
+  },
+  {
+    "bindings": {
+      "ctrl--": "pane::GoBack",
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-=": "pane::GoForward",
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-shift-o": "workspace::Open",
+    },
+  },
+]
