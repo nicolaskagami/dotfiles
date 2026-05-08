@@ -7,7 +7,65 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "show_wrap_guides": false,
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "scrollbar": {
+    "axes": {
+      "horizontal": false,
+    },
+  },
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "cargo": {
+          "allFeatures": true,
+        },
+        "check": {
+          "command": "clippy",
+        },
+      },
+    },
+  },
+  "agent": {
+    "dock": "right",
+    "default_model": {
+      "provider": "Local Qwen",
+      "model": "Qwen_Qwen2.5-Coder-3B-Instruct-GGUF_qwen2.5-coder-3b-instruct-q4_k_m.gguf",
+      "enable_thinking": false,
+    },
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "language_models": {
+    "openai_compatible": {
+      "Local Qwen": {
+        "api_url": "http://localhost:8080/v1",
+        "available_models": [
+          {
+            "name": "Qwen_Qwen2.5-Coder-3B-Instruct-GGUF_qwen2.5-coder-3b-instruct-q4_k_m.gguf",
+            "display_name": "Qwen2.5-Coder 3B",
+            "max_tokens": 8192,
+            "capabilities": {
+              "tools": false,
+              "images": false,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true,
+            },
+          },
+        ],
+      },
+    },
+  },
+  "edit_predictions": {
+    "provider": "zed",
+    "mode": "subtle",
+  },
+  "show_wrap_guides": true,
   "search": {
     "button": false,
   },
@@ -25,13 +83,13 @@
   },
   "title_bar": {
     "show_menus": false,
-    "show_branch_icon": true,
   },
   "status_bar": {
     "active_encoding_button": "non_utf8",
     "active_language_button": true,
   },
   "git_panel": {
+    "dock": "left",
     "tree_view": false,
   },
   "terminal": {
@@ -41,10 +99,11 @@
     "dock": "bottom",
   },
   "project_panel": {
+    "dock": "left",
     "button": true,
     "git_status": true,
   },
-  "soft_wrap": "none",
+  "soft_wrap": "editor_width",
   "minimap": {
     "show": "never",
   },
@@ -63,9 +122,5 @@
   "vim_mode": true,
   "ui_font_size": 18.0,
   "buffer_font_size": 18.0,
-  "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "One Dark",
-  },
+  "theme": "One Dark",
 }

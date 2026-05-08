@@ -287,4 +287,18 @@
       "ctrl-shift-o": "workspace::Open",
     },
   },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-,": [
+        "editor::GoToDiagnostic",
+        {
+          "severity": {
+            "min": "hint",
+            "max": "error",
+          },
+        },
+      ],
+    },
+  },
 ]
