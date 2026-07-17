@@ -7,6 +7,12 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "cli_default_open_behavior": "existing_window",
+  "agent_servers": {
+    "github-copilot-cli": {
+      "type": "registry",
+    },
+  },
   "outline_panel": {
     "dock": "left",
   },
@@ -22,7 +28,7 @@
     "rust-analyzer": {
       "initialization_options": {
         "cargo": {
-          "allFeatures": true,
+          "allFeatures": false,
         },
         "check": {
           "command": "clippy",
@@ -103,7 +109,7 @@
     "button": true,
     "git_status": true,
   },
-  "soft_wrap": "editor_width",
+  "soft_wrap": "none",
   "minimap": {
     "show": "never",
   },

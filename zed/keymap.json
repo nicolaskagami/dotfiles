@@ -301,4 +301,22 @@
       ],
     },
   },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-shift-k": "git::Branch"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-alt-shift-b": "git::Branch"
+    }
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "ctrl-shift-k": "editor::DeleteLine"
+    }
+  }
 ]
