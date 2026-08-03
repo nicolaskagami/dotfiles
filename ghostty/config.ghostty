@@ -1,6 +1,8 @@
 window-decoration = false 
 term = xterm-256color
 confirm-close-surface = false
+
+font-family = "Noto Sans Mono"
 font-size = 14
 
 # for tmux

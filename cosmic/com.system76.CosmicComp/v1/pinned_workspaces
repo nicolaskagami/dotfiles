@@ -1,0 +1,146 @@
+[
+    (
+        output: (
+            name: "HDMI-A-2",
+            edid: Some((
+                manufacturer: ('D', 'E', 'L'),
+                product: 61757,
+                serial: Some(1094208834),
+                manufacture_week: 47,
+                manufacture_year: 2023,
+                model_year: None,
+            )),
+        ),
+        tiling_enabled: true,
+        id: Some("1c8c4c4"),
+        name: None,
+    ),
+    (
+        output: (
+            name: "HDMI-A-2",
+            edid: Some((
+                manufacturer: ('D', 'E', 'L'),
+                product: 61757,
+                serial: Some(1094208834),
+                manufacture_week: 47,
+                manufacture_year: 2023,
+                model_year: None,
+            )),
+        ),
+        tiling_enabled: true,
+        id: Some("149ed61"),
+        name: None,
+    ),
+    (
+        output: (
+            name: "HDMI-A-2",
+            edid: Some((
+                manufacturer: ('D', 'E', 'L'),
+                product: 61757,
+                serial: Some(1094208834),
+                manufacture_week: 47,
+                manufacture_year: 2023,
+                model_year: None,
+            )),
+        ),
+        tiling_enabled: true,
+        id: Some("104e5eb"),
+        name: None,
+    ),
+    (
+        output: (
+            name: "HDMI-A-2",
+            edid: Some((
+                manufacturer: ('D', 'E', 'L'),
+                product: 61757,
+                serial: Some(1094208834),
+                manufacture_week: 47,
+                manufacture_year: 2023,
+                model_year: None,
+            )),
+        ),
+        tiling_enabled: true,
+        id: Some("64b7d8"),
+        name: None,
+    ),
+    (
+        output: (
+            name: "HDMI-A-2",
+            edid: Some((
+                manufacturer: ('D', 'E', 'L'),
+                product: 61757,
+                serial: Some(1094208834),
+                manufacture_week: 47,
+                manufacture_year: 2023,
+                model_year: None,
+            )),
+        ),
+        tiling_enabled: true,
+        id: Some("1b8b1d5"),
+        name: None,
+    ),
+    (
+        output: (
+            name: "HDMI-A-2",
+            edid: Some((
+                manufacturer: ('D', 'E', 'L'),
+                product: 61757,
+                serial: Some(1094208834),
+                manufacture_week: 47,
+                manufacture_year: 2023,
+                model_year: None,
+            )),
+        ),
+        tiling_enabled: true,
+        id: Some("15a9dfe"),
+        name: None,
+    ),
+    (
+        output: (
+            name: "HDMI-A-2",
+            edid: Some((
+                manufacturer: ('D', 'E', 'L'),
+                product: 61757,
+                serial: Some(1094208834),
+                manufacture_week: 47,
+                manufacture_year: 2023,
+                model_year: None,
+            )),
+        ),
+        tiling_enabled: true,
+        id: Some("d51b01"),
+        name: None,
+    ),
+    (
+        output: (
+            name: "HDMI-A-2",
+            edid: Some((
+                manufacturer: ('D', 'E', 'L'),
+                product: 61757,
+                serial: Some(1094208834),
+                manufacture_week: 47,
+                manufacture_year: 2023,
+                model_year: None,
+            )),
+        ),
+        tiling_enabled: true,
+        id: Some("12f7a70"),
+        name: None,
+    ),
+    (
+        output: (
+            name: "HDMI-A-2",
+            edid: Some((
+                manufacturer: ('D', 'E', 'L'),
+                product: 61757,
+                serial: Some(1094208834),
+                manufacture_week: 47,
+                manufacture_year: 2023,
+                model_year: None,
+            )),
+        ),
+        tiling_enabled: true,
+        id: Some("fcb02a"),
+        name: None,
+    ),
+]
