@@ -33,6 +33,7 @@ o.completeopt = { 'menu', 'menuone', 'noselect' }
 o.termguicolors = true
 o.scrolloff = 4
 o.clipboard = 'unnamedplus'   -- needs a clipboard provider; harmless if absent
+o.exrc = true                 -- per-project .nvim.lua (trust-prompted on first load)
 
 -------------------------------------------------------------------------
 -- Bootstrap lazy.nvim (pure Lua, installs via git clone)
@@ -144,7 +145,14 @@ require('lazy').setup({
         -- staged hunks get their own (dimmer) signs so you can see
         -- at a glance what's staged vs not
         signs_staged_enable = true,
-        current_line_blame = false, -- toggle with <leader>hb below
+        -- Zed-style inline blame: faded text after the cursor line
+        current_line_blame = true,
+        current_line_blame_opts = {
+          virt_text_pos = 'eol_right_align',
+          delay = 5,                -- only appears when you linger
+          ignore_whitespace = true,
+        },
+        current_line_blame_formatter = '<author>, <author_time:%R> • <summary>',
         on_attach = function(bufnr)
           local gs = require('gitsigns')
           local function map(mode, l, r, desc)
@@ -292,7 +300,6 @@ vim.lsp.config('rust_analyzer', {
   capabilities = capabilities,
   settings = {
     ['rust-analyzer'] = {
-      cargo = { allFeatures = true },
       check = { command = 'clippy' },   -- clippy on save instead of check
       inlayHints = {
         bindingModeHints = { enable = true },
