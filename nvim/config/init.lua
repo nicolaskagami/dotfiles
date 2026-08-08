@@ -86,6 +86,7 @@ require('lazy').setup({
     branch = '0.1.x',
     dependencies = {
       'nvim-lua/plenary.nvim',
+      'nvim-telescope/telescope-ui-select.nvim',
       {
         'nvim-telescope/telescope-fzf-native.nvim',
         -- plain `make` on illumos is Sun make; use gmake
@@ -112,9 +113,17 @@ require('lazy').setup({
           lsp_type_definitions = { show_line = false },
           lsp_definitions      = { show_line = false },
         },
+        extensions = {
+          -- code actions (gra) and every other vim.ui.select prompt
+          -- become a compact fuzzy dropdown instead of a numbered list
+          ['ui-select'] = {
+            require('telescope.themes').get_dropdown({}),
+          },
+        },
       })
       -- Don't die if the C extension didn't build; telescope still works
       pcall(telescope.load_extension, 'fzf')
+      telescope.load_extension('ui-select')
 
       local b = require('telescope.builtin')
       local map = vim.keymap.set
