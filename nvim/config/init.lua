@@ -13,6 +13,7 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+
 local o = vim.opt
 o.number = true
 o.relativenumber = true
@@ -26,7 +27,7 @@ o.ignorecase = true
 o.smartcase = true
 o.splitright = true
 o.splitbelow = true
-o.undofile = true             -- persistent undo
+-- o.undofile = true             -- persistent undo
 o.updatetime = 250            -- faster CursorHold (gitsigns blame, etc.)
 o.timeoutlen = 1000           -- give multi-key maps (grr, <leader>h…) time
 o.completeopt = { 'menu', 'menuone', 'noselect' }
