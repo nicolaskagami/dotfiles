@@ -280,6 +280,13 @@ require('lazy').setup({
   {
     'nvim-lualine/lualine.nvim',
     config = function()
+      -- show the host OS's logo for unix fileformat, not always illumos
+      local os_glyph = ({
+        SunOS   = '\u{f326}', -- illumos (nf-linux-illumos)
+        Linux   = '\u{f31a}', -- Tux
+        Darwin  = '\u{f179}', -- Apple
+        FreeBSD = '\u{f30c}',
+      })[(vim.uv or vim.loop).os_uname().sysname] or '\u{f31a}'
       require('lualine').setup({
         options = { section_separators = '', component_separators = '|' },
         sections = {
@@ -287,9 +294,7 @@ require('lazy').setup({
           lualine_c = { { 'filename', path = 1 } },
           lualine_x = {
             'encoding',
-            -- illumos mark for unix fileformat instead of the default Tux
-            -- (needs a Nerd Font recent enough to have nf-linux-illumos)
-            { 'fileformat', symbols = { unix = '\u{f326}', dos = '\u{f17a}', mac = '\u{f179}' } },
+            { 'fileformat', symbols = { unix = os_glyph, dos = '\u{f17a}', mac = '\u{f179}' } },
             'filetype',
           },
         },
